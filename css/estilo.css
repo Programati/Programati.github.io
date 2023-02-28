@@ -1,270 +1,340 @@
-/*GENERAL*/
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
 *{
-	margin: 0px;
-	padding: 0px;
-	color: #ffffff;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 50;
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
 }
-h1{
-	font-size: 4rem;
-	font-weight: 700;
-}
-h2{
-	font-size: 1.625rem;
-}
-h3{
-	font-size: 1rem;
-}
-section{
-	background: #000000;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	border-bottom: 8px solid #222;
-}
-section div.contenido{
-	width: 1100px;
-	margin: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-}
-section div.contenido div{
-	
-}
-/*Está dentro de un contenedor con 2 cajas más, pero esas 2 cajas
-están flotando y se desbordan, para evitar eso, ponemos una caja más
-y aplicamos RESTAURAR con CLEAR BOTH
-Queda la caja debajo de todo y ocupando el 100% del ancho de la caja padre*/
-.restaurar{
-	clear: both;
+html{
+    scroll-behavior: smooth;
 }
 
-/*GENERAL*/
-/*FONDO*/
-html, body, .imgFondo{
-	height: 100%;
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("../img/fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
 }
-
-.imgFondo{
-	background: url(../img/fondo.jpg);
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
 }
-
-/*FONDO*/
-/*CABECERA*/
-section.cabecera{
- 	background: none;
- 	position: absolute;
- 	top: -30px;
- 	bottom: 0px;
- 	left: 0px;
- 	right: 0px;
+.inicio .contenido-seccion header{
+    padding: 30px;
 }
-
-nav{
-	margin: 0 2.5rem;
-	padding: 10px;
-	background: none;
+/* menu lateral */
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: #940253;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
 }
-div.logo{
- 	float: left;
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
-div.login{
- 	float: right;
+/* ****** */
+.inicio .contenido-seccion header .logo{
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Yellowtail";
+    text-shadow: 0 0 35px #fff;
 }
-div.login:hover{
-	cursor: pointer;
+.inicio .contenido-seccion header .logo .color{
+    color: #940253;
+    font-family: "Yellowtail";
 }
-div.login span{
-	padding: 8px 12px;
-	background: #e50914;
-	border-radius: 4px;
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: #940253;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
 }
-
-.presentacion{
-	text-align: center;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/*background: red;*/
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
 }
-.presentacion input{
-	height: 50px;
-	width: 450px;
-	margin-top: 8px;
-	margin-bottom: 3px;
-	border-radius: 2px 0px 0px 2px;
-	border: solid 1px #5695e9;
-	padding-left: 11px;
-	color: #545252;
+.inicio .contenido-seccion .info{
+    padding-bottom: 130px;
 }
-.presentacion span{
-	background: #D50812;
-	padding: 14.5px 60px 16px 60px;
-	font-weight: 800;
-	margin-left: -5px;
-	border: solid #D50812;
-	border-radius: 0px 4px 4px 0px;
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
 }
-
-.presentacion span:hover, .contPreguntas span:hover{
-	cursor: pointer;
-	background: #EC0B16;
-	border: solid #EC0B16;
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
 }
-/*CABECERA*/
-/*TV*/
-.izquierda{
-	float: left;
+.inicio .contenido-seccion .info .redes{
+    margin: 20px 0;
 }
-.derecha{
-	float: right;
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #940253;
+    border: 1px solid #940253;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
 }
-.flotanteTexto{
-	width: 59%;
+.inicio .contenido-seccion .info .redes a:hover{
+    color: #fff;
+    background-color: #940253;
+    box-shadow: 0 0 20px #fff;
 }
-.flotanteImagen{
-	width: 39%;
+.inicio .contenido-seccion .foto{
+    position: relative;
 }
-.contenido img{
-	width: 100%;
-	height: auto;
-	border: 0;
-	position: relative;
-	z-index: 2;
-}
-.contenido h2{
-	font-weight: bold;
-	font-size: 50px;
-}
-.contenido p{
-	font-size: 25px;
-	font-weight: 200;
-}
-.tv video {
+.inicio .contenido-seccion .foto img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #940253;
     position: absolute;
-    transform: translate(-373px, 67px);
-    width: 313px;
-    z-index: 1;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
 }
-.disfruta video {
-    position: absolute;
-    transform: translate(-348px, 34px);
-    width: 263px;
-    z-index: 1;
+/* estilos generales */
+.titulo-seccion{
+    font-family: "Yellowtail";
+    font-size: 1.5rem;
 }
-/*TV*/
-/*DESCARGA*/
-.tarjetaSub1, .portada{
-	/*CAJA DE LA IMAGEN PORTADA Y EL TEXTO*/
-	display: flex;
-	align-items: center;
+/* SECCION SOBRE MI */
+.sobremi{
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
 }
-.tarjetaSub1{
-	width: 60%;
-	margin: auto;
-	border: solid 2px #4A4646;
-	border-radius: 10px;
-	padding: 10px;
-	position: relative;
-	z-index: 1;
-	background: black;
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
 }
-.tarjeta{
-	position: relativ;
-	transform: translate(-90px, -41px);
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
 }
-/*DESCARGA*/
-/*PREGUNTAS*/
-.contPreguntas{
-	margin: auto;
-	text-align: center;
-	width: 750px;
+.sobremi .contenido-seccion .especial{
+    color: #940253;
+    font-weight: bold;
+    margin-top: 15px;
 }
-.contPreguntas div{
-	text-align: left;
-	font-size: 24px;
+.sobremi .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: #666;
 }
-.preguntas h2{
-	font-weight: bold;
-	font-size: 40px;
+.sobremi .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
 }
-.pregunta{
-	background: #303030;
-	padding: 10px;
-	margin-bottom: 5px;
-	margin-top: 5px;
+.sobremi .contenido-seccion .fila .col{
+    width: 30%;
 }
-.respuesta{
-	background: #303030;
-	margin-bottom: 5px;
-	margin-top: 5px;
+.sobremi .contenido-seccion .fila .col i{
+    color: #940253;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #940253;
+    line-height: 40px;
+    border-radius: 50%;
 }
-.pregunta p, .respuesta p{
-	margin: 10px;
-	padding-left: 5px;
+.sobremi .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
 }
-.respuesta hr{
-	border: solid 1px #262626;
+/* SECCION HABILIDADES */
+.habilidades{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("../img/habilidades.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
 }
-.pregunta:hover .respuesta{
-	/*Da por entendido que si el contenido tiene hasta 500px
-	el hover se va a alargar hasta llegar a los 500px, pero, si tiene
-	menos de 500px, va a tomar el tamaño que tiene el contenido, osea, limita
-	su máximo, pero su mínimo es según el contenido*/
-	max-height: 500px;
+.habilidades .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
 }
-.respuesta{
-	max-height: 0px;
-	overflow: hidden;
-	transition: all 1s;
+.habilidades .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
 }
-.contPreguntas input{
-	height: 50px;
-	width: 400px;
-	margin-top: 8px;
-	margin-bottom: 3px;
-	border-radius: 2px 0px 0px 2px;
-	border: solid 1px #5695e9;
-	padding-left: 11px;
-	color: #545252;
+.habilidades .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
-.contPreguntas span{
-	background: #D50812;
-	padding: 15px;
-	padding-bottom: 16.5px;
-	font-weight: 500;
-	margin-left: -5px;
-	border: solid #D50812;
-	border-radius: 0px 4px 4px 0px;
+.habilidades .contenido-seccion .fila .col{
+    width: 47%;
+    text-align: left;
 }
-.contPreguntas h3{
-	font-size: 15px;
+.habilidades .contenido-seccion .fila .col .cont-barra{
+    display: flex;
+    align-items: center;
 }
-/*PREGUNTAS*/
-/*PIE*/
-.info{
-	columns: 4 20px;
-	width: 1100px;
-	margin: auto;
-	display: flex;
-	justify-content: center;
+.habilidades .contenido-seccion .barra{
+    display: flex;
+    border: 1px solid #940253;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
 }
-.pie>p{
-	font-size:  20px;
-	color: #909090;
-	display: flex;
-	justify-content: center;
-	padding-bottom: 55px;
+.habilidades .contenido-seccion .barra .e{
+    background-color: #363636;
+    width: 20px;
+    height: 30px;
+    margin-right: 2px;
 }
-.pie .info div{
-	
+/* SECCION RESUMEN */
+.resumen{
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
 }
-.pie .info div p{
-	font-size:  15px;
-	color: #909090;
-	padding: 5px;
+.resumen .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
 }
-/*PIE*/
+.resumen .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.resumen .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.resumen .contenido-seccion .info .col{
+    width: 45%;
+}
+.resumen .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: #940253;
+    font-weight: bold;
+    border: 2px solid #940253;
+    padding: 10px;
+
+}
+.resumen .contenido-seccion .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.resumen .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #bab9b9;
+}
+.resumen .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+.resumen .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.resumen .contenido-seccion .info .col table p{
+    font-size: 14px;
+}
+.resumen .contenido-seccion .info .col table .promedio{
+    display: block;
+    color: #940253;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.resumen .contenido-seccion .info .col table .descripcion{
+    border-left: 1px solid #bab9b9;
+    padding-left: 20px;
+}
+/* SECCION CONTACTO */
+.contacto{
+    background-color: #202020;
+    padding: 140px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+.contacto .contenido-seccion .fila .col h2{
+    color: #940253;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:800px){
+    .habilidades .contenido-seccion .fila{
+        display: block;
+    }
+    .habilidades .contenido-seccion .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        justify-content: center;
+    }
+    .sobremi .contenido-seccion .fila{
+        display: block;
+    }
+    .sobremi .contenido-seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .resumen .contenido-seccion .info{
+        display: block;
+    }
+    .resumen .contenido-seccion .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    .resumen .contenido-seccion .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .resumen .contenido-seccion .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contacto .contenido-seccion .fila{
+        display: block;
+    }
+}
