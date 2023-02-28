@@ -30,7 +30,7 @@ html{
 .inicio .contenido-seccion header nav{
     position: fixed;
     margin-left: 60px;
-    background-color: #940253;
+    background-color: #008080;
     padding: 15px;
     border-radius: 10px;
     text-align: left;
@@ -47,7 +47,7 @@ html{
 /* ****** */
 .inicio .contenido-seccion header .nav-bar{
     position: fixed;
-    background-color: #940253;
+    background-color: #008080;
     font-size: 20px;
     width: 50px;
     height: 50px;
@@ -79,8 +79,8 @@ html{
     display: inline-block;
     text-decoration: none;
     background-color: #000;
-    color: #940253;
-    border: 1px solid #940253;
+    color: #008080;
+    border: 1px solid #008080;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -90,7 +90,7 @@ html{
 }
 .inicio .contenido-seccion .info .redes a:hover{
     color: #fff;
-    background-color: #940253;
+    background-color: #008080;
     box-shadow: 0 0 20px #fff;
 }
 .inicio .contenido-seccion .foto{
@@ -99,7 +99,7 @@ html{
 .inicio .contenido-seccion .foto img{
     max-width: 200px;
     border-radius: 50%;
-    border: 5px solid #940253;
+    border: 5px solid #008080;
     position: absolute;
     left: 50%;
     top: -100px;
@@ -126,7 +126,7 @@ html{
     font-size: 30px;
 }
 .sobremi .contenido-seccion .especial{
-    color: #940253;
+    color: #008080;
     font-weight: bold;
     margin-top: 15px;
 }
@@ -144,11 +144,11 @@ html{
     width: 30%;
 }
 .sobremi .contenido-seccion .fila .col i{
-    color: #940253;
+    color: #008080;
     display: inline-block;
     width: 40px;
     height: 40px;
-    border: 2px solid #940253;
+    border: 2px solid #008080;
     line-height: 40px;
     border-radius: 50%;
 }
@@ -192,7 +192,7 @@ html{
 }
 .habilidades .contenido-seccion .barra{
     display: flex;
-    border: 1px solid #940253;
+    border: 1px solid #008080;
     padding: 2px;
     border-radius: 3px;
     margin-right: 10px;
@@ -229,9 +229,9 @@ html{
 }
 .resumen .contenido-seccion .info .col .titulo{
     display: inline-block;
-    color: #940253;
+    color: #008080;
     font-weight: bold;
-    border: 2px solid #940253;
+    border: 2px solid #008080;
     padding: 10px;
 
 }
@@ -255,7 +255,7 @@ html{
 }
 .resumen .contenido-seccion .info .col table .promedio{
     display: block;
-    color: #940253;
+    color: #008080;
     margin-top: 10px;
     font-weight: bold;
 }
@@ -287,7 +287,7 @@ html{
     margin-top: 50px;
 }
 .contacto .contenido-seccion .fila .col h2{
-    color: #940253;
+    color: #008080;
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width:800px){
