@@ -1,0 +1,140 @@
+/* Declaracion del tipo de letra a usar en la página, la descargamos y la metemos en el proyecto */
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/font/Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/font/Poppins-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Barra de navegación */
+.navbar{
+    text-transform: uppercase;
+    background-color: #210440;
+}
+.navbar-nav a{
+    font-size: 0.7rem;
+    color: #fff;
+}
+.navbar-nav .nav-item a:hover{
+    color: #ffba00;
+}
+.navbar-toggler{
+    color:#ffba00
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* SECCION CONTENIDO */
+.card-producto{
+    padding: 1rem;
+}
+.card-producto i{
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #210440;
+    padding: 8px 19px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+.columna-producto img:hover{
+    box-shadow: 10px 10px 5px #210440;
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    
+}
+.card-titulo{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* PIE DE PAGINA */
+.footer{
+    border-top: 1px solid #000000;
+    margin-top: 1rem;
+    font-size: .6rem;
+    background-color: #210440;
+    color: #fff;
+}
+
+.footer-links a{
+    font-size: .69rem;
+    padding: .5rem;
+}
+
+.footer-icono{
+    font-size: 1.5rem;
+}
+.footer-icono .nav-link{
+    padding: .7rem;
+}
+.footer-span-letra{
+    font-size: .6rem;
+}
+
+
+
+
+
+/* ADAPTABLE RESPONSIVO */
+/* Aplicaremos un estilo cuando la página sea menor a 767px */
+@media screen and (max-width: 767px){
+    /* ocultaremos el icono que esta en la clase navbra-brand */
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-collapse{
+        padding-top: 10px;
+    }
+    .footer{
+        font-size: .65rem;
+    }
+    .footer .row div{
+        margin-top: 5rem;
+    }
+    .nav-toggler-texto{
+        font-size: .8rem;
+        font-weight: bold;
+    }
+    
+}
+/* Aplicaremos un estilo cuando la página sea menor a 1024px */
+@media screen and (max-width: 1024px){
+    .card-titulo, .card-descripcion{
+        font-size: .9rem;
+    }
+    /* .card-producto i{
+        font-size: .9rem;
+    } */
+}
+@media screen and (max-width: 374px){
+    /* Cuando baje de los 374px de ancho se achicará la letra */
+    .nav-toggler-texto{
+        font-size: .8rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 700px){
+    /* Cuando pase los 700px de ancho, la imagen quedara en 600px */
+    .navbar{
+        font-size: .7rem;
+    }
+    .carousel-item img{
+        max-width: 90vh;
+    }
+}
+
