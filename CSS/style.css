@@ -116,9 +116,12 @@ body{
     .card-titulo, .card-descripcion{
         font-size: .9rem;
     }
-    /* .card-producto i{
-        font-size: .9rem;
-    } */
+    .carousel-caption h5{
+        font-size: 1rem;
+    }
+    .carousel-caption p{
+        font-size: 0.7rem;
+    }
 }
 @media screen and (max-width: 374px){
     /* Cuando baje de los 374px de ancho se achicará la letra */
@@ -133,8 +136,114 @@ body{
     .navbar{
         font-size: .7rem;
     }
-    .carousel-item img{
-        max-width: 90vh;
-    }
+    
+}
+
+/* FreeCodeCamp */
+
+/* GENERALES */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 2.5rem;
+}
+.seccion-clara{
+    color: #000000;
+    background-color: #fff;
+}
+.btn-info{
+    font-size: 1.1rem;
+    margin: 20px;
+}
+.texto-negro{
+    color: #000000;
+}
+.texto-blanco{
+    color: #fff;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px 0;
+    font-family: monospace;
+}
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: dimgrey;
+}
+.seccion-descripcion{
+    font-size: 1.2rem;
+}
+/* proyectos */
+/* SECTION */
+.proyectos-recientes{
+    padding: 40px;
+}
+/* SECTION | Vamos a ajustar las imágenes dentor de PROYECTOS RECIENTES */
+.proyectos-recientes img{
+    padding: 10px;
+    border: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+/* CONTENEDOR de la galeria de proyectos */
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+/* Contenido dentro de la imagen */
+.overlay{
+    transition: all 0.2 ease;
+    opacity: 0; /*Va a estar transparente*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+/* Es la clase que encierra a cada proyecto por separado */
+.proyecto{
+    position: relative;
+}   
+/* Cuando el cursor este sobre cada clase PROYECTO, es decir, en cada div proyecto, a la IMAGEN se le va a asignar el siguiente estilo*/
+.proyecto:hover img{
+    opacity: 0.5; /*Se le va a dar un poco de transparecia a la IMAGEN*/
+    
+}
+/* Cuando el cursor este sobre cada div PROYECTO, es decir, en cada proyecto a la clase OVERLAY se le va a asignar el siguiente estilo*/
+.proyecto:hover .overlay{
+    opacity: 1; /*La transparencia desaparecera y se mostrará el contenido de la clase overlay*/
+
+}
+.overlay .iconos-contenedor{
+    display: flex;/*Para que los iconos siempre se muestren en una sola fila*/
+    /*Tambien se lo puede hacer con BOOTSTRAP aplicandole la clase d-flex*/
+}
+.overlay i{
+    color: black;
+    font-size: 3rem;
+    margin: 10px;
+}
+
+/* CARRUSEL PROPIO*/
+.carousel-caption{
+    font-size: 1rem;
+    background-color: #210440;
+    opacity: 0.7;
+    overflow: auto;
+}
+
+.carousel-inner img{
+    height: 100%;
+    width: 100%;
 }
 
