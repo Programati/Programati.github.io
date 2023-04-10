@@ -195,6 +195,249 @@ h1{
     padding-top: 60px;
     margin-bottom: 40px;
 }
+/* Declaracion del tipo de letra a usar en la página, la descargamos y la metemos en el proyecto */
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/font/Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/font/Poppins-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Barra de navegación */
+.navbar{
+    text-transform: uppercase;
+    background-color: #210440;
+}
+.navbar-nav a{
+    font-size: 0.7rem;
+    color: #fff;
+}
+.navbar-nav .nav-item a:hover{
+    color: #ffba00;
+}
+.navbar-toggler{
+    color:#ffba00
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* SECCION CONTENIDO */
+.card-producto{
+    padding: 1rem;
+}
+.card-producto i{
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #210440;
+    padding: 8px 19px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+.columna-producto img:hover{
+    box-shadow: 10px 10px 5px #210440;
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    
+}
+.card-titulo{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* PIE DE PAGINA */
+.footer{
+    font-size: .9rem;
+    background-color: #210440;
+    color: #fff;
+}
+.footer .row{
+    padding-top: 1rem;
+}
+
+
+.footer-dev {
+    background-color: chartreuse;
+}
+
+.footer-icono{
+    font-size: 1.5rem;
+    background-color: red;
+}
+.a-1, .a-3 {
+    background-color: #ffba00;
+}
+.a-2 {
+    background-color: aqua;
+}
+.footer-span-letra{
+    font-size: .7rem;
+}
+/*PIE DE PAGINA*/
+footer{
+    min-height: 500px;
+    background-color: #210440;
+    padding: 1rem;
+}
+.footer-links{
+    font-size: .9rem;
+    padding-top: 1.5rem;
+}
+.footer-links a{
+    padding: .3rem;
+}
+.footer-texto{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales i {
+    color: #fff ;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover {
+    background-color: #fff;
+    border: 2px solid #ffba00;;
+}
+.iconos-redes-sociales a:hover i {
+    color: #ffba00;
+}
+
+
+
+/* ADAPTABLE RESPONSIVO */
+/* Aplicaremos un estilo cuando la página sea menor a 767px */
+@media screen and (max-width: 767px){
+    /* ocultaremos el icono que esta en la clase navbra-brand */
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-collapse{
+        padding-top: 10px;
+    }
+    .footer{
+        font-size: .65rem;
+    }
+    .footer .row div{
+        margin-top: 5rem;
+    }
+    .nav-toggler-texto{
+        font-size: .8rem;
+        font-weight: bold;
+    }
+    
+}
+/* Aplicaremos un estilo cuando la página sea menor a 1024px */
+@media screen and (max-width: 1024px){
+    .card-titulo, .card-descripcion{
+        font-size: .9rem;
+    }
+    .carousel-caption h5{
+        font-size: 1rem;
+    }
+    .carousel-caption p{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 374px){
+    /* Cuando baje de los 374px de ancho se achicará la letra */
+    .nav-toggler-texto{
+        font-size: .8rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 700px){
+    /* Cuando pase los 700px de ancho, la imagen quedara en 600px */
+    .navbar{
+        font-size: .7rem;
+    }
+    
+}
+
+/* FreeCodeCamp */
+
+/* GENERALES */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 2.5rem;
+}
+.seccion-clara{
+    color: #000000;
+    background-color: #fff;
+}
+.btn-info{
+    font-size: 1.1rem;
+    margin: 20px;
+}
+.texto-negro{
+    color: #000000;
+}
+.texto-blanco{
+    color: #fff;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px 0;
+    font-family: monospace;
+}
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: dimgrey;
+}
+.seccion-descripcion{
+    font-size: 1.2rem;
+}
+
+/* proyectos */
+/* SECTION */
+.proyectos-recientes{
+    padding: 40px;
+}
+/* SECTION | Vamos a ajustar las imágenes dentor de PROYECTOS RECIENTES */
+.proyectos-recientes img{
+    padding: 10px;
+    border: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+/* CONTENEDOR de la galeria de proyectos */
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
 /* Contenido dentro de la imagen */
 .overlay{
     transition: all 0.2 ease;
@@ -228,7 +471,7 @@ h1{
     display: flex;/*Para que los iconos siempre se muestren en una sola fila*/
     /*Tambien se lo puede hacer con BOOTSTRAP aplicandole la clase d-flex*/
 }
-.overlay i{
+.overlay i {
     color: black;
     font-size: 3rem;
     margin: 10px;
@@ -239,11 +482,19 @@ h1{
     font-size: 1rem;
     background-color: #210440;
     opacity: 0.7;
-    overflow: auto;
 }
 
-.carousel-inner img{
-    height: 100%;
-    width: 100%;
+/* ARTICULOS */
+.articulos {
+    padding: 30px;
+    font-size: 0.9rem;
+}
+.articulos .card{
+     width: 80%;
+     max-width: 600px;
+     margin: 20px;
+}
+.articulos .card-header {
+    font-weight: bold;
 }
 
