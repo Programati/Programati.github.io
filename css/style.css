@@ -1,0 +1,224 @@
+
+body{
+    font-size: 16px;
+    background-color: #dec6f6;
+}
+
+/* Barra de navegación */
+.navbar{
+    background-color: #210440;
+}
+.navbar-nav a{
+    font-size: 0.87em;
+    color: #fff;
+}
+.navbar-nav .nav-item a:hover{
+    color: #ffba00;
+}
+.navbar-toggler{
+    color:#ffba00
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link {
+    text-transform: capitalize;
+}
+
+/* CARRUSEL PROPIO*/
+
+.vertical {
+    top: 50%;
+    transform: translateY(-30%);
+    bottom: unset;
+}
+.breve-descripcion {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+.breve-descripcion p{
+    text-align: justify;
+}
+
+
+/* -------------------- PAGINA QUIENES SOMOS ---------------- */
+
+.historia {
+    text-align: justify;
+}
+
+/* seccion que va a contener al staff */
+.equipoMS {
+    padding: 2.5em 2.5em 5em 2.5em;
+}
+/* seteamos un tamaño del carruel del staf */
+.equipoMS .carousel {
+    max-width: 800px;
+}
+/* Cada item va a tener una altura fija, si hay otra img mas grande no se va a notar */
+.equipoMS .carousel-item {
+    height: 500px;
+}
+
+/* contenedor de cada item */
+.equipoMS .carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Ajustamos la imagen */
+.equipoMS .equipo-imagen {
+    height: 140px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+.equipo-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    text-align: justify;
+}
+/* contenedor de info adicional */
+.equipo-info {
+    font-weight: bold;
+    text-align: center;
+}
+.equipo-info p {
+    margin-bottom: 0;
+}
+.empleado {
+    font-size: 1.2rem;
+}
+.cargo {
+    font-size: 0.9rem;
+    color: #ffba00;
+}
+
+/* -------------------- PAGINA COMERCIALIZACION ---------------- */
+
+
+
+/* -------------------- PAGINA CONTACTOS -------------------- */
+
+.descripcion-contacto p {
+    text-align: justify;
+}
+#mensaje {
+    resize:none;
+}
+
+/* -------------------- PAGINA TERMINOS Y USOS -------------------- */
+
+.terminos {
+    text-align: justify;
+}
+
+
+/* -------------------- PIE DE PAGINA -------------------- */
+footer{
+    min-height: 25em;
+    background-color: #210440;
+    padding: 1em;
+    color: #fff;
+}
+
+/* FOOTER MEDIO */
+.seccion-izquierda p{
+    text-align: end;
+}
+.seccion-medio p{
+    text-align: center;
+}
+
+.iconos-redes-sociales a{
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales i {
+    color: #fff ;
+    font-size: 1.5em;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover {
+    background-color: #fff;
+    border: 2px solid #ffba00;;
+}
+.iconos-redes-sociales a:hover i {
+    color: #ffba00;
+}
+
+
+
+
+
+/* ADAPTABLE RESPONSIVO */
+/* Aplicaremos un estilo cuando la página sea menor a .... */
+
+/* Extra large device (large desktops, 1200px and up) */
+@media (max-width: 1200px){
+    body{
+        font-size: 14px;
+    }
+}
+/* Large device (desktops, 992px and up) */
+@media (max-width: 992px){
+    body{
+        font-size: 16px;
+    }
+    .carousel-caption p {
+        font-size: .8rem;
+    }
+}
+/*Medium device (tablets, 768px and up)*/
+/* Aplicaremos un estilo cuando la página sea menor a 768px */
+@media (max-width: 780px){
+    /* ocultaremos el icono que esta en la clase navbra-brand */
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-collapse{
+        padding-top: 10px;
+    }
+    /* HOME */
+    .breve-descripcion p{
+        font-size: 1.2rem;
+    }
+    /* QUIENES SOMOS */
+    .equipo-imagen {
+        height: 100px;
+        width: 120px;
+    }
+    .equipo-texto {
+        font-size: 0.8em;
+    }
+    
+
+}
+/*Small device (landscope, phone, 576px and up)*/
+@media (max-width: 576px){
+    body {
+        font-size: 12px;
+    }
+    /* PAGINA CONTACTO */
+    .titulo-contacto p {
+        font-size: 1.8rem !important;
+    }
+    .info-contacto p{
+        font-size: 1rem !important;
+    }
+    /* FOOTER */
+    .seccion-medio p {
+        text-align: start;
+    }
+}
