@@ -242,10 +242,9 @@ footer{
     .equipo-texto {
         font-size: 0.8em;
     }
-    .seccion-medio p, .seccion-izquierda p {
+    .seccion-medio p, .seccion-izquierda p{
         text-align: start;
     }
-    
 
 }
 /*Small device (landscope, phone, 576px and up)*/
