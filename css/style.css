@@ -242,6 +242,9 @@ footer{
     .equipo-texto {
         font-size: 0.8em;
     }
+    .seccion-medio p, .seccion-izquierda p {
+        text-align: start;
+    }
     
 
 }
@@ -261,10 +264,7 @@ footer{
     .info-contacto p{
         font-size: 1rem !important;
     }
-    /* FOOTER */
-    .seccion-medio p {
-        text-align: start;
-    }
+    
     
 }
 
