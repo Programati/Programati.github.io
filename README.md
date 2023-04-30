@@ -1,2 +1,2 @@
 # Programati.github.io
-Conocimientos dados en Azul School
+Conocimientos adquiridos durante la cursada de Taller de Programación 1, en la UNNE Corrientes
